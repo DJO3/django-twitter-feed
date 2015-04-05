@@ -1,6 +1,5 @@
 import tweepy
 from django.conf import settings
-from django.db import transaction
 
 from twitter_feed.models import Tweet
 
@@ -38,15 +37,12 @@ class ImportTweets:
 
         return tweet
 
-    @transaction.commit_manually
     def _replace_all_tweets(self, new_tweets):
         try:
-            with transaction.commit_manually():
-                Tweet.objects.remove_all()
+            Tweet.objects.remove_all()
 
-                for tweet in new_tweets:
-                    tweet.save()
+            for tweet in new_tweets:
+                tweet.save()
 
-                transaction.commit()
         except Exception:
             pass

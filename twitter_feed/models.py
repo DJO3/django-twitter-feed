@@ -25,5 +25,5 @@ class Tweet(models.Model):
         verbose_name = 'Tweet'
         verbose_name_plural = 'Tweets'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.content
