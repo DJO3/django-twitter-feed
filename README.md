@@ -3,8 +3,9 @@ django-twitter-feed
 
 Really simple app to show a Twitter feed in your Django application.
 
-It's using a a task to update the feed regularly.
+Schedule a task to update the feed regularly.
 
+Compatible with Python 3 and Django 1.7+.
 
 INSTALL:
 --------
