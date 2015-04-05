@@ -1,4 +1,4 @@
-django-twitter-feed
+django-twitter-feed3
 ===================
 
 Really simple app to show a Twitter feed in your Django application.
@@ -9,7 +9,7 @@ Compatible with Python 3 and Django 1.7+.
 
 INSTALL:
 --------
-`pip install django-twitter-feed`
+`pip3 install -e git+https://github.com/DJO3/django-twitter-feed3.git#egg=django-twitter-feed3`
 
 
 Set-up:

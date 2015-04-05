@@ -7,16 +7,16 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-twitter-feed',
-    version='0.2.2',
+    name='django-twitter-feed3',
+    version='1.2.2',
     packages=['twitter_feed'],
     include_package_data=True,
     license='MIT License',
     description='A simple Django app to show a Twitter feed.',
     long_description=README,
-    url='https://github.com/FrancoisConstant/django-twitter-feed',
-    author='Francois Constant',
-    author_email='francois.constant@gmail.com',
+    url='https://github.com/DJO3/django-twitter-feed3',
+    author='Francois Constant, Dave O'Connor',
+    author_email='dev@pytools.org',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -26,5 +26,8 @@ setup(
         'Programming Language :: Python',
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
-    zip_safe=False,
+    install_requires=[
+        'Django>=1.7',
+        'tweepy>=3.1.0',
+    ]
 )
