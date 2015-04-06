@@ -9,7 +9,7 @@ Compatible with Python 3 and Django 1.7+.
 
 INSTALL:
 --------
-`pip3 install -e git+https://github.com/DJO3/django-twitter-feed3.git#egg=django-twitter-feed3`
+`pip3 install git+git://github.com/DJO3/django-twitter-feed3`
 
 
 Set-up:
