@@ -15,7 +15,7 @@ setup(
     description='A simple Django app to show a Twitter feed.',
     long_description=README,
     url='https://github.com/DJO3/django-twitter-feed3',
-    author='Francois Constant, Dave O'Connor',
+    author="Francois Constant, Dave O'Connor",
     author_email='dev@pytools.org',
     classifiers=[
         'Environment :: Web Environment',
