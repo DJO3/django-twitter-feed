@@ -57,3 +57,15 @@ For example:
 	</div>
 	
 7.Make sure `python manage.py update_tweets` is regurlalry called.
+------------------------------------------------------------------------
+
+8.Add `<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>` to your base html.
+
+9.Add something like the following to get a beautifully twitter feed.   
+`<div class="tweet">
+    {% for tweet in tweets %}
+        <blockquote class="twitter-tweet" lang="en">
+            <a href="https://twitter.com/DJOconnor3/status/{{ tweet.id_str }}"></a>
+        </blockquote>
+    {% endfor %}
+</div>`

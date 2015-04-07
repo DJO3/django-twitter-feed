@@ -11,3 +11,4 @@ class Command(BaseCommand):
             print("*************************")
             print(tweet.published_at)
             print(tweet.content)
+            print(tweet.id_str)
