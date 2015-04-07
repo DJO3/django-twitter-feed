@@ -12,3 +12,4 @@ class Command(BaseCommand):
             print(tweet.published_at)
             print(tweet.content)
             print(tweet.id_str)
+            print(tweet.screen_name)

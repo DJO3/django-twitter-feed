@@ -70,7 +70,7 @@ For example:
 	<div class="tweets">
     	{% for tweet in tweets %}
     	    <blockquote class="twitter-tweet" lang="en">
-                <a href="https://twitter.com/DJOconnor3/status/{{ tweet.id_str }}"></a>
+                <a href="https://twitter.com/{{ tweet.screen_name }}/status/{{ tweet.id_str }}"></a>
             </blockquote>
         {% endfor %}
 	</div>
